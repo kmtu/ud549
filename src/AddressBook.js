@@ -3,13 +3,14 @@ function AddressBook() {
 }
 
 AddressBook.prototype.addContact = function(contact) {
-    this.contacts.push(contact);
+  this.contacts.push(contact);
 }
 
 AddressBook.prototype.getContact = function(idx) {
-    return this.contacts[idx];
+  return this.contacts[idx];
 }
 
 AddressBook.prototype.deleteContact = function(idx) {
-    this.contacts.splice(idx, 1);
+  this.contacts.splice(idx, 1);
+  console.log("log: " + this.contacts[0]);
 }
